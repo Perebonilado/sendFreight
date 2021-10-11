@@ -1,0 +1,450 @@
+@media screen and (max-width: 1063px){
+
+    /* navbar */
+    #nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #nav-bar div{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #nav-bar div:first-child{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    #search-box{
+        margin-top: 10px;
+        max-width: 300px;
+    }
+
+    #nav-bar>div~div{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #request-quote {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+
+    /* service selection bx */
+    #service-selection-bx>h2{
+        text-align: center;
+    }
+
+    #service-selection-bx>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }  
+
+    #service-selection-bx>div div{
+        margin-bottom: 10px;
+        height: 100px;
+        max-width: 300px;
+    }
+
+    #service-selection-bx>div div::after{
+        content: ' ';
+        width: 105%;
+        top: 98.5px;
+    }
+
+    #service-selection-bx>div div::before{
+        width: 8px;
+        right: -9px;
+        /* border: 1px solid red; */
+    }
+
+    #service-selection-bx>div div i {
+        right: 7px;
+    }
+
+    /* info box section */
+
+    #info-bx{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .location-input{
+        width: 9rem;
+    }
+
+    #info-bx form > div {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #info-bx form > div>div{
+        margin-bottom: 10px;
+    }
+
+    .second-row>div, .second-row> select{
+        margin-bottom: 10px;
+    }
+
+    /* date input */
+
+    input[type="date"]{
+        padding-left: 2rem;
+        max-width: 5rem;
+    }
+
+    .second-row>div input{
+        min-width: 10rem;
+    }
+
+    .second-row>input, .second-row select{
+        width: 10rem;
+    }
+
+    /* cargo section */
+
+    #cargo-details>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #cargo-details-selection-bx {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 210px;
+    }
+
+    #cargo-details-selection-bx div{
+        width: 200px;
+    }
+
+    #cargo-details>div>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .total-vol-weight-bx{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #total-weight-bx{
+        margin: 15px 0;
+        margin-left: 0;
+    }
+
+    #cargo-toggler-container{
+        margin-bottom: 10px;
+    }
+
+    .toggler-bx p{
+        text-align: center;
+    }
+
+    /* additional services */
+
+    #additional-services-bx {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #additional-services>h3{
+        text-align: center;
+    }
+
+    #export-forward-cargo-insurance-bx{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #export-forward-cargo-insurance-bx>div>div:nth-child(2){
+        text-align: left;
+        flex: 1;
+    }
+
+    #export-forward-cargo-insurance-bx>div>div:nth-child(2)>p{
+        text-align: left;
+    }
+    
+
+
+    #import-custom-transport-del-bx{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #import-custom-transport-del-bx>div>div:nth-child(2){
+        text-align: left;
+        flex: 1;
+    }
+
+    #import-custom-transport-del-bx>div>div:nth-child(2)>p{
+        text-align: left;
+    }
+
+    /* search box */
+    #search-box{
+        margin-left: 0;
+    }
+
+
+} 
+
+@media screen and (max-width: 445px){
+    #search-box{
+        max-width: 10rem;
+        margin-left: 0;
+    }
+
+    /* select a service */
+
+    #service-selection-bx {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #service-selection-bx p{
+        margin-left: 28px;
+        /* text-align: center; */
+    }
+
+    #service-selection-bx>div div{
+        width: 10rem;
+    }
+
+    #service-selection-bx>div div::after{
+        display: none;
+    }
+
+    #service-selection-bx>div div::before{
+        display: none;
+    }
+
+    #service-selection-bx>div div i {
+       display: none;
+    }
+
+    /* info box section */
+
+    #info-bx form > div {
+        width: 10rem;
+    }
+
+    #date{
+        padding-left: 2rem;
+        width: 2rem;
+    }
+
+    #import-export{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #import-btn {
+        border-bottom: 1px solid var(--tet-clr);
+    }
+
+    #info-bx>form>div>div{
+    
+        border: 1px solid var(--tet-clr);
+    }
+
+    /* cargo details section */
+
+    #cargo-details-selection-bx {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 8rem;
+    }
+
+    #cargo-details-selection-bx div{
+        width: 6rem;
+    }
+
+    .total-vol-weight-bx{
+        width: 8rem;
+    }
+
+    .total-vol-weight-bx div>div>input{
+        width: 5rem;
+    }
+
+    .total-vol-weight-bx div>div>p{
+        font-size: .7rem;
+    }
+
+    /* additional services */
+
+    #additional-services-bx>div>div {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+        width: 10rem;
+    }
+
+    .toggler-container{
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width: 330px){
+    body{
+        font-size: .6rem;
+    }
+
+    body h3{
+        font-size: .6rem;
+    }
+
+    #search-box{
+        max-width: 6rem;
+    }
+
+    /* select a service */
+
+
+    #service-selection-bx p{
+        margin-left: 20px;
+    }
+
+    #service-selection-bx>div div{
+        width: 6rem;
+    }
+
+    #service-selection-bx>div div::after{
+        display: none;
+    }
+
+    #service-selection-bx>div div::before{
+        display: none;
+    }
+
+    #service-selection-bx>div div i {
+       display: none;
+    }
+
+    /* info box section */
+
+    #info-bx form > div {
+        width: 6rem;
+    }
+
+    #date::placeholder{
+        padding-left: 0 !important;
+        width: 1rem !important;
+    }
+
+    .second-row >select, .second-row >select~input  {
+        width: 5rem !important;
+    }
+
+    #import-export{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #import-btn {
+        border-bottom: 1px solid var(--tet-clr);
+    }
+
+    #info-bx>form>div>div{
+        border: 1px solid var(--tet-clr);
+        width: 6rem;
+        text-align: center;
+    }
+
+    /* cargo details section */
+
+    #cargo-details-selection-bx {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 6rem;
+    }
+
+    #cargo-details-selection-bx div{
+        width: 4rem;
+    }
+
+    .total-vol-weight-bx{
+        width: 3rem;
+    }
+
+    .total-vol-weight-bx div>div>input{
+        width: 4rem;
+    }
+
+    .total-vol-weight-bx div>div>p{
+        font-size: .53rem;
+        margin-right: 7px;
+        padding: 0;
+        text-align: center;
+        /* border: 1px solid red; */
+    }
+
+    /* additional services */
+
+    #additional-services-bx>div>div {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+        width:6rem;
+    }
+
+    .toggler-container{
+        margin-bottom: 10px;
+    }
+
+    .second-row{
+        position: relative;
+    }
+
+    .second-row>div{
+        height: 20px;
+    }
+
+    #date{
+        transform: scale(.5);
+        position: absolute;
+        left: -30px;
+        top: 1px;
+        background-color: #fff;
+        /* visibility: hidden; */
+      
+        /* border: 1px solid red; */
+    }
+
+}

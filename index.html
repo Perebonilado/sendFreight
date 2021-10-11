@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Freight</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <nav id="nav-bar">
+        <!-- logo and search -->
+        <div >
+            <p class="white-text bold-text"> <span class="line-height-plus">send</span> FREIGHT</p>
+
+            <div id="search-box">
+                <input type="search" placeholder="Search" id="search-bar" /><i class="fas fa-search"></i>
+            </div>
+
+        </div>
+
+
+        <!-- nav buttons -->
+        <div>
+            <a href="" class="btn white-text link" id="request-quote">Request Quote</a>
+            <a href="" class="btn white-text link" id="book-shipment">Book Shipment</a>
+
+        </div>
+    </nav>
+
+    <section class="main-content section-padding">
+
+        <!-- select a service -->
+
+        <div class="inner-content-bx inner-section-padding margin-btm" id="service-selection-bx">
+            <h2 class="margin-btm">Select a service</h2>
+
+            <div>
+                
+                <div class="select-service-sub-bx">
+                    <p class="sub-p">Air Freight</p>
+                    <i class="fas fa-plane sub-i" id="plane-icon"></i>
+                </div>
+
+                <div class="select-service-sub-bx active">
+                    <p class="active sub-p">Sea Freight</p>
+                    <i class="fas fa-ship active sub-i"></i>
+                </div>
+
+                <div class="select-service-sub-bx">
+                    <p class="sub-p">Inland<br /> (Truck and Barge)</p>
+                    <i class="fas fa-truck sub-i"></i>
+                </div>
+
+                <div class="select-service-sub-bx">
+                    <p class="sub-p">Customs <br />Clearance</p>
+                    <i class="fas fa-user sub-i"></i>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- form section -->
+
+        <div class="inner-content-bx inner-section-padding margin-btm" id="info-bx">
+            <a href="" id="info-icon-bx" class="margin-btm">
+                <i class="fas fa-info"></i>
+            </a>
+
+            <form action="">
+                <div>
+
+                    <div id="import-export">
+                        <a href="" class="btn link" id="import-btn">Import</a>
+                        <a href="" class="btn link" id="export-btn">Export</a>
+                    </div>
+
+                    <div class="location-input location-input-from">
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i> <span><b>From</b></span>
+                        </div>
+                        <input type="text" placeholder="City or port" id="from">
+                    </div> 
+
+                    <div class="location-input location-input-to" >
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i> <span><b>To</b></span>
+                        </div>
+                        <input type="text" placeholder="City or port" id="to">
+                    </div>
+
+                </div>
+
+                <div class="margin-top second-row">
+                    <!-- <input type="date"> -->
+                    <div>
+                        <input type="text" onfocus="(this.type='date')" placeholder="Ready Date" id="date">
+                        <i class="fas fa-calendar"></i> 
+                    </div>
+
+
+                    <select name="" id="">
+                        <option value="">Incoterms</option>
+                        <option value="">Option 2</option>
+                        <option value="">Option 3</option>
+                        <option value="">Option 4</option>
+                      </select>
+
+                    <input type="text" name="" id="" placeholder="Total Cargo Value" >
+                </div>
+
+
+            </form>
+
+            
+        </div>
+
+        <!-- cargo details -->
+
+        <div class="inner-content-bx inner-section-padding margin-btm" id="cargo-details">
+
+            <div>
+
+                <div>
+                <P>Cargo Details</P>
+
+                <div id="cargo-details-selection-bx">
+
+                    <div id="total-dimension-bx">
+                        <p id="total-diemsion">Total Dimensions</p>
+                    </div>
+
+                    <div id="package-details-bx">
+                        <p id="package-details">Package Details</p>
+                    </div>
+
+                </div>
+
+                <div class="total-vol-weight-bx">
+                    <div>
+                        <div id="total-vol-bx">
+                            <input type="text" placeholder="cbm">
+                            <p>Total Volume</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div id="total-weight-bx">
+                            <input type="text" placeholder="kg">
+                            <p>Total Weight</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+                </div>
+                
+                
+
+
+                <div class="toggler-bx">
+                    <!-- toggler -->
+                    <div class="toggler-container margin-right" id="cargo-toggler-container">
+                        <div class="toggler-btn" id="cargo-toggler-btn"></div>
+                    </div>
+
+                    <p><b>Dangerous Cargo</b> (ex. Chemicals, Battery)</p>
+                </div>
+
+
+            
+
+        </div>
+        </div>
+
+        <!-- additional services -->
+        <div class="inner-content-bx inner-section-padding" id="additional-services">
+            <h3 class="margin-btm">Additional Services</h3>
+
+            <div id="additional-services-bx">
+                <!-- box-1 -->
+                <div id="export-forward-cargo-insurance-bx" class="add-serv-sub-bx">
+                    
+                    <div class="toggler-bx margin-btm">
+                        <!-- toggler -->
+                        <div class="toggler-container margin-right" id="export-toggler-container">
+                            <div class="toggler-btn" id="export-toggler-btn"></div>
+                        </div>
+                        
+                        
+                        <div>
+                            <h3>Export Forwarding</h3>
+                            <p class="grey-text p-y">We handle customs clearance and documentation</p>
+                        </div>
+                    </div> 
+
+                    <div class="toggler-bx">
+                        <!-- toggler -->
+                        <div class="toggler-container margin-right" id="cargo-insurance-container">
+                            <div class="toggler-btn" id="cargo-insurance-btn"></div>
+                        </div>
+    
+                        <div>
+                            <h3>Cargo Insurance</h3>
+                            <p class="grey-text p-y">Protect your cargo from logistics risks up to its full value</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- box-2 -->
+                <div id="import-custom-transport-del-bx" class="add-serv-sub-bx">
+                    <div class="toggler-bx margin-btm">
+                        <!-- toggler -->
+                        <div class="toggler-container margin-right" id="import-custom-container">
+                            <div class="toggler-btn" id="import-custom-btn"></div>
+                        </div>
+    
+                        <div>
+                            <h3>Import Customs Clearance</h3>
+                            <p class="grey-text p-y">We handle import customs and regulatory requirements</p>
+                        </div>
+                    </div>
+
+                    <div class="toggler-bx">
+                        <!-- toggler -->
+                        <div class="toggler-container margin-right" id="transport-container">
+                            <div class="toggler-btn" id="transport-btn"></div>
+                        </div>
+    
+                        <div>
+                            <h3>Transport/Delivery</h3>
+                            <p class="grey-text p-y">We deliver the cargo to your door step from the ports</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <script src="./js/app.js"></script>
+</body>
+</html>

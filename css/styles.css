@@ -1,0 +1,425 @@
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --pri-clr: rgb(44, 44, 145);
+    --pri-clr-light: rgb(137, 137, 214);
+    --sec-clr:rgb(95, 167, 95);
+    --sec-clr-darker:rgb(54, 104, 54);
+    --tet-clr:rgb(211, 211, 211);
+    --tet-clr-dark:rgb(80, 79, 79);
+}
+
+/* UTILITY CLASSES */
+
+.section-padding { padding: 3rem 6rem;}
+.inner-section-padding{padding: 1rem;}
+.section-item-padding {padding: 1.5rem;}
+.p-y{padding: .5rem 0;}
+.white-text{color: #fff;}
+.grey-text{color: var(--tet-clr-dark);}
+.bold-text{font-weight: bold;}
+.margin-btm{margin-bottom: 1rem;}
+.margin-top{margin-top: 2rem;}
+.margin-right{margin-right: 1rem;}
+.line-height-plus{font-size: 1.6rem;}
+.link{
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn{
+    padding: .5rem 1.2rem;
+    border: 1px solid #fff;
+    font-weight: bold;
+}
+
+/* body */
+body {
+    background-color: var(--tet-clr);
+    font-family: sans-serif;
+}
+
+/* navbar */
+#nav-bar {
+    background-color: var(--pri-clr);
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-bar>div{
+    display: flex;
+    align-items: center;
+}
+
+#search-bar{
+    background-color: var(--pri-clr-light);
+    outline: none;
+    border: none;
+    color: white;
+    padding: .5rem;
+    width: 100%;
+}
+
+#search-bar::placeholder{
+    color: var(--tet-clr);
+    font-weight: bold;
+}
+
+#search-box{
+    position: relative;
+    width: 25rem;
+    margin-left: 3rem;
+}
+
+.fa-search{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    right: 15px;
+}
+
+#request-quote {
+    margin-right: 2rem;
+}
+
+#book-shipment{
+    background-color: var(--sec-clr);
+    border: 1px solid var(--sec-clr);
+    transition: background-color .5s, border .5s;
+}
+
+#book-shipment:hover {
+    background-color: var(--sec-clr-darker);
+    border: 1px solid var(--sec-clr-darker);
+}
+
+
+
+/* select a service section */
+#service-selection-bx{
+    background-color: #fff;
+}
+
+
+
+#service-selection-bx>div{
+    display: flex;
+    justify-content: space-between;
+}  
+
+    
+#service-selection-bx>div div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--tet-clr);
+    width: 200px;
+    position: relative;
+    cursor: pointer;
+}
+
+#service-selection-bx>div div::before{
+    content: ' ';
+    height: 100%;
+    width: 8px;
+    position: absolute;
+    background-color: #fff;
+    right: -9px;
+    top: 6px;
+    z-index: 2;
+}
+
+#service-selection-bx>div div::after{
+    content: ' ';
+    width: 105%;
+    height: 10px;
+    position: absolute;
+    background-color: #fff;
+    top: 53px;
+    z-index: 2;
+}
+    
+
+#service-selection-bx>div div p{
+    padding: .5rem;
+    color: var(--tet-clr-dark);
+}
+
+.active{
+    background-color: var(--pri-clr);
+    color: #fff !important;
+    border: none !important;
+}
+
+/* air freight */
+#service-selection-bx>div div i {
+    color: var(--tet-clr-dark);
+    transform: scale(2.5);
+    position: absolute;
+    right: 7px;
+    bottom: 6px;
+    border: none;
+}
+
+#plane-icon{
+    transform: rotate(-90deg) scale(2.5) !important;  
+}
+
+/* INFO SUB-SECTION */
+
+#info-bx {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#info-bx form > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* info icon */
+#info-icon-bx {
+    border: 3px solid var(--tet-clr-dark);
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+#info-icon-bx>i {
+    color: var(--tet-clr-dark);
+}
+
+/* import export btns */
+
+#info-bx>form>div>div{
+    display: flex;
+    border: 2px solid var(--tet-clr);
+}
+
+#info-bx>form>div>div a{
+    color: var(--tet-clr-dark);
+}
+
+#import-btn {
+    border-right: 1px solid var(--tet-clr);
+}
+
+
+
+
+
+/* from and to inputs */
+
+.location-input{
+    width: 20rem;
+}
+
+.location-input>div {
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--tet-clr);
+    padding-left: .5rem;
+}
+
+.location-input input{
+    width: 100%;
+    background-color: var(--tet-clr);
+    outline: none;
+    border: 1px solid var(--tet-clr);
+}
+
+#from {
+    padding-left: .3rem;
+}
+
+#to{
+    padding-left: .3rem;
+}
+
+.location-input-to>div{
+    width: 3rem;
+}
+
+/* date input */
+.second-row>input, .second-row select{
+    width: 18rem;
+    padding: .5rem;
+    background-color: var(--tet-clr);
+    outline: none;
+    border: none;
+}
+
+#date{
+    padding-left: 2rem;
+    background-color: var(--tet-clr);
+    outline: none;
+    border: none;
+    width: 15rem;
+}
+
+.second-row>div input::placeholder{
+    padding: 3rem;
+    background-color: var(--tet-clr);
+}
+
+.second-row>div input{
+    border: none;
+    outline: none;
+    width: 15rem;
+}
+
+.second-row>div{
+    position: relative;
+}
+
+.second-row>div i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+
+
+/* cargo-details */
+
+#cargo-details {
+    background-color: #fff;
+}
+
+#cargo-details>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggler-bx{
+    display: flex;
+}
+
+.toggler-container {
+    border-radius: 30px;
+    width: 50px;
+    height: 25px;
+    position: relative;
+    background-color: var(--tet-clr-dark);
+    transition: background-color .5s;
+}
+
+.toggler-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(0%);
+    cursor: pointer;
+    background-color: #fff;
+    transition: transform .5s;
+}
+
+
+#cargo-details-selection-bx {
+    display: flex;
+    margin: 1rem 0 2rem 0;
+    padding: .3rem;
+    background-color: var(--tet-clr);
+    width:16.8rem;
+}
+
+#total-dimension-bx{
+    padding: .5rem;
+    background-color: #fff;
+    color: var(--pri-clr);
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#package-details-bx{
+    padding: .5rem;
+    color: var(--tet-clr-dark);
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* total vol and weight section */
+
+.total-vol-weight-bx {
+    display: flex;
+}
+
+.total-vol-weight-bx p {
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    background-color: #fff;
+    padding: 0 .2rem;
+}
+
+/* total vol */
+
+#total-vol-bx{
+    position: relative;
+}
+
+#total-vol-bx>input{
+    height: 2rem;
+    border: 2px solid var(--tet-clr);
+    padding: 1.2rem .4rem;
+    outline: none;
+}
+
+#total-vol-bx>input::placeholder{
+    padding-left: 8rem;
+}
+
+/* total weight */
+
+#total-weight-bx{
+    position: relative;
+    margin-left: 20px;
+}
+
+#total-weight-bx>input{
+    height: 2rem;
+    border: 2px solid var(--tet-clr);
+    padding: 1.2rem .4rem;
+    outline: none;
+}
+
+#total-weight-bx>input::placeholder{
+    padding-left: 8rem;
+}
+
+
+/* ADDITIONAL SERVICES */
+#additional-services{
+    background-color: #fff;
+}
+
+#additional-services-bx {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-serv-sub-bx{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
